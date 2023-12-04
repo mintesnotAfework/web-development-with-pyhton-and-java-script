@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/mintesnot/parrot/7fc5a8a0-b2d0-4a22-a184-a749c0abe106/gitrepos/web-development-with-pyhton-and-java-script/.django/bin/python3 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from sqlparse.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
